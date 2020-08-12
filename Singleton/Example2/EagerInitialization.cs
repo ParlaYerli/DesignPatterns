@@ -11,7 +11,6 @@ namespace Singleton.Example2
         {
 
         }
-
         public static EagerInitialization GetEagerInitialization()
         {
             return instance;
