@@ -19,7 +19,6 @@ namespace Factory
                     return new FileLogManager();
                 case LoggerType.EmailLogger:
                     return new EmailLogManager();
-               
                 default:
                     break;
             }
