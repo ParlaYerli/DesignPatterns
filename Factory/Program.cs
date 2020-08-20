@@ -19,7 +19,7 @@ namespace Factory
 
             ///example2
             EmployeeFactory concreteEmployee = new ConcreteEmployeeFactory();
-            IFactory permanentEmployee = concreteEmployee.GetFactoryEmployee("PermanentEmployee");,
+            IFactory permanentEmployee = concreteEmployee.GetFactoryEmployee("PermanentEmployee");
 
             permanentEmployee.Details();
             Console.WriteLine("");
