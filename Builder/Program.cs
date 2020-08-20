@@ -30,3 +30,8 @@ namespace Builder
         }
     }
 }
+
+// model : olay sonunda elde etmek istediğimiz nesnedir. ConcreteBuilder tarafından sınıfı tarafından üretilmektedir.
+// concretebuilder : product nesnesini oluşturur. oluşturulacak modelin temel özellik ve donanımını sağlayan sınıftır.
+// builder : model nesnesinin oluşturulması için gerekli arayüzü sağlar. ConcreteBuilder nesnesi ile kalıtsak bir durum söz konusudur.
+// director : yapılan tasarım sonunda bir builder referansı üzerinden Client tarafından nesne üretim talebine cevap verir.
