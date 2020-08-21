@@ -5,6 +5,10 @@ using Builder.Example2.Builder;
 using Builder.Example2.ConcreteBuilder;
 using Builder.Example2.Director;
 using Builder.Example2.Model;
+using Builder.Example3.ConcreteBuilder;
+using Builder.Example3.Director;
+using Builder.Example3.IBuilder;
+using Builder.Example3.Model;
 using System;
 
 namespace Builder
@@ -26,6 +30,18 @@ namespace Builder
             DirectorCar car = new DirectorCar();
             car.Construction(carBuilder);
             Console.WriteLine(carBuilder.Car.ToString());
+           
+
+
+            /// example 3
+            MesajDirector mesaj = new MesajDirector();
+            mesaj.Construction(new DogumGunuTebrikBuilder());
+            mesaj.Show();
+            MesajBuilder builder = new BayramTebrikMesajBuilder();
+            mesaj.Construction(builder);
+            mesaj.Show();
+
+            
             Console.ReadLine();
         }
     }
