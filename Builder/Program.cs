@@ -9,7 +9,9 @@ using Builder.Example3.ConcreteBuilder;
 using Builder.Example3.Director;
 using Builder.Example3.IBuilder;
 using Builder.Example3.Model;
-using System;
+using Builder.Example4.Builder;
+using Builder.Example4.Model;
+using System; 
 
 namespace Builder
 {
@@ -24,14 +26,12 @@ namespace Builder
             Console.WriteLine(builderMobilePhone.GetMobilePhone().ToString());
 
 
-
             /// example2
             ICarBuilder carBuilder = new OpelConcreteBuilder();
             DirectorCar car = new DirectorCar();
             car.Construction(carBuilder);
             Console.WriteLine(carBuilder.Car.ToString());
            
-
 
             /// example 3
             MesajDirector mesaj = new MesajDirector();
@@ -41,7 +41,16 @@ namespace Builder
             mesaj.Construction(builder);
             mesaj.Show();
 
-            
+
+            /// exampl4 
+            var pizzaOrder = new PizzaBuilder(Size.Medium)
+                                            .AddCheese()
+                                            .AddHam()
+                                            .AddMushrooms()
+                                            .AddOlives()
+                                            .AddPepperoni()
+                                            .AddSauce();
+            Console.WriteLine("Size : {0}, Sauce : {1}, Pepperoni : {2}, Olives : {3}, Pepperoni : {4}, Ham : {5}",pizzaOrder.Size,pizzaOrder.Sauce,pizzaOrder.Pepperoni,pizzaOrder.Olives,pizzaOrder.Mushrooms,pizzaOrder.Ham);
             Console.ReadLine();
         }
     }
