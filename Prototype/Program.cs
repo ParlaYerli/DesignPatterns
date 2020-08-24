@@ -1,4 +1,5 @@
 ﻿using Prototype.Example1.ConcretePrototype;
+using Prototype.Example2.ConcretePrototype;
 using System;
 
 namespace Prototype
@@ -18,6 +19,16 @@ namespace Prototype
             {
                 Console.WriteLine("Eşit değil");
             }
+
+            /// example2 
+            Employee employee = new Employee();
+            employee.Name = "parla";
+            employee.Department = "computer engineering";
+
+            Employee employee1 = employee.Clone();
+            employee1.Name = "ömer";
+            Console.WriteLine(employee.Name);
+            Console.WriteLine(employee1.Name);
             Console.ReadKey();
         }
     }
