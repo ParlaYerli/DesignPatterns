@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Prototype.Example1.Prototype
+namespace Prototype.Example1.AbstractPrototype
 {
     public abstract class PrototypeOyun
     {

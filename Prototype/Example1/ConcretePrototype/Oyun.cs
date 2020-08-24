@@ -1,9 +1,9 @@
-﻿using Prototype.Example1.Prototype;
+﻿using Prototype.Example1.AbstractPrototype;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Prototype.Example1.Model
+namespace Prototype.Example1.ConcretePrototype
 {
     public class Oyun : PrototypeOyun
     {

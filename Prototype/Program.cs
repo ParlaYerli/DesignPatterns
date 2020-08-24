@@ -1,4 +1,4 @@
-﻿using Prototype.Example1.Model;
+﻿using Prototype.Example1.ConcretePrototype;
 using System;
 
 namespace Prototype
@@ -22,3 +22,6 @@ namespace Prototype
         }
     }
 }
+// Abstract Prototype : yeni nesnelerin kopyalanmasını sağlayan ve bu işlem için Clone metodunu barındıran bir sınıftır. 
+// Concrete Prototype : abstract sınıfı uygulayacak olan ve projede herhangi bir amaç için kullanılacak olan nesnelerdir.
+//yani prototype design patterni uygulayacağımız projedeki sınıflarımızdır.
