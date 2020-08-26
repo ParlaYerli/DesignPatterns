@@ -34,7 +34,7 @@ namespace Decorator
         }
     }
 }
-
+// aynı veri üzerinde birden fazla değişiklik yapılması gereken durumlarda kullanılır.bu sayede ; yeni bir kod eklemek ,eski kodlara herhangi bir sekilde dokunmadan yeni bir sınıf yazmak yeterli olmaktadır.
 // loosely-coupled uygulamalar yapmayı sağlar.
 // runtime zamanında bir nesnye yeni özellikler eklenmesini sağlar.
 // özellikleri kalıtım yolu dışında composition ve delegation ile de alınabilmesini sağlar.
